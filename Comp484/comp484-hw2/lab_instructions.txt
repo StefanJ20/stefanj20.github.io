@@ -1,0 +1,19 @@
+Structuring Page Content
+
+For this hw you’ll be planning and implementing a semantic structuring strategy for the entire site based on the work we completed in the lectures. In the steps below I’ll list the tasks you need to perform, as well as the relevant files for each task.
+
+1.	Determine a structuring strategy.
+             a.	Applies to: structure.html
+             b.	Open the structure.html file and explore the page structure and ARIA roles. Write out the document outline, and how structural tags like aside, article, nav, and section are being used.
+             c.	Examine how semantic tags like the header, footer, main, etc are used.
+             d. review slide #7 of the lecture slides.Create a diagram of how the tags would look like in this HW website. Take a screenshot of the diagram and add it to the images folder.
+             e. review slide #10 of the lecture slides. Use the website(s) provided or other alternative options to generate a document outline. Take a screenshot of the outline and add it to the images folder.
+2.	Structure pages
+             a.	Applies to: all .html pages
+             b.	Using the strategy devised from the structure.html file, structure each of the remaining files so that the site uses a consistent, logical structure. Add all the elements discussed in the lecture (Week 2B - More Structuring Content) to the .html files.  
+
+3.	Apply ARIA roles
+             a.	Applies to: all pages
+             b.	As you are structuring pages, add ARIA roles to elements when appropriate. 
+					
+
