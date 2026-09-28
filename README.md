@@ -17,4 +17,4 @@ Repository for Comp 484 Projects.
 - [Homework 4 source files](https://github.com/stefanj20/stefanj20.github.io/tree/main/Comp484/comp484-hw4)
 
 - [Project 1](https://stefanj20.github.io/Comp484/interactive-map-project/)
-- [Project 1](https://github.com/stefanj20/stefanj20.github.io/tree/main/Comp484/interactive-map-project)
+- [Project 1 source files](https://github.com/stefanj20/stefanj20.github.io/tree/main/Comp484/interactive-map-project)
