@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Parks Maps</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="../index.html">National Parks Maps</a><nav aria-label="Primary navigation"><a class="active" href="../index.html">Maps</a><a href="../about.html">About</a></nav></header>
+  <main class="page-shell map-page">
+    <a class="back-link" href="../index.html">← Back to all maps</a>
+    <h1 id="map-title">National Parks Maps</h1>
+    <p id="map-description" class="map-description"></p>
+    <div class="map-switcher" aria-label="Choose a park map"><button data-map="yosemite">Yosemite</button><button data-map="sequoia">Sequoia &amp; Kings Canyon</button><button data-map="death-valley">Death Valley</button></div>
+    <figure class="large-map">
+      <!-- ELEMENT: <img> displays the selected map image. ATTRIBUTE: usemap connects the image to the named <map> below. -->
+      <img id="map-image" src="../assets/images/yosemite-campgrounds.png" alt="Selected national park map" usemap="#park-map">
+      <!-- ELEMENT: <map> creates an image-map container for clickable regions. -->
+      <map name="park-map" id="park-map">
+        <!-- ELEMENT: <area> creates a clickable region. ATTRIBUTES: shape defines the region type, and coords define its location. -->
+        <area class="map-area" data-region="north" shape="rect" coords="0,0,686,283" href="#map-summary" alt="Northern map region">
+        <area class="map-area" data-region="middle" shape="rect" coords="0,283,686,566" href="#map-summary" alt="Middle map region">
+        <area class="map-area" data-region="south" shape="rect" coords="0,566,686,849" href="#map-summary" alt="Southern map region">
+      </map>
+      <figcaption id="map-caption">Yosemite Campgrounds map</figcaption>
+    </figure>
+    <section class="map-summary" id="map-summary"><h2 id="summary-title">Yosemite Campgrounds</h2><p id="summary-text"></p><a class="button" id="reference-link" href="map-reference.html?map=yosemite">Map reference →</a></section>
+  </main>
+  <footer class="site-footer"><p>National Parks Maps</p><a href="../about.html">About this project</a></footer>
+  <script src="../js/map.js"></script>
+</body>
+</html>

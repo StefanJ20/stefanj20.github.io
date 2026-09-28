@@ -1,0 +1,273 @@
+:root {
+    --ink: #222;
+    --muted: #666;
+    --line: #d7d7d7;
+    --paper: #fff;
+    --soft: #f4f4f4;
+    --green: #2d7656;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--paper);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 22px 24px;
+    border-bottom: 1px solid var(--line);
+}
+
+.brand {
+    color: var(--green);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.page-shell {
+    max-width: 1100px;
+    margin: auto;
+    padding: 48px 24px 70px;
+}
+
+.intro {
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+
+.intro h1 {
+    margin: 0 0 10px;
+    font-size: clamp(2rem, 5vw, 3.8rem);
+}
+
+.intro p,
+.lede,
+.map-description {
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.map-card {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #fff;
+    text-decoration: none;
+}
+
+.map-card:hover {
+    border-color: var(--green);
+}
+
+.map-card img {
+    display: block;
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.map-card div {
+    padding: 18px;
+}
+
+.map-card h2 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+}
+
+.map-card p {
+    min-height: 72px;
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.map-card span,
+.back-link {
+    color: var(--green);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 24px 30px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.site-footer a {
+    color: var(--green);
+}
+
+.map-page h1 {
+    margin: 25px 0 8px;
+    font-size: clamp(2rem, 5vw, 3.6rem);
+}
+
+.map-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 25px 0;
+}
+
+.map-switcher button {
+    padding: 9px 13px;
+    color: var(--ink);
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.map-switcher button:hover,
+.map-switcher button.active {
+    color: #fff;
+    background: var(--green);
+    border-color: var(--green);
+}
+
+.large-map {
+    margin: 0;
+    border: 1px solid var(--line);
+    background: var(--soft);
+}
+
+.large-map img {
+    display: block;
+    width: 100%;
+    max-height: 760px;
+    object-fit: contain;
+}
+
+.large-map figcaption {
+    padding: 9px 12px;
+    color: var(--muted);
+    background: #fff;
+    font-size: 0.85rem;
+}
+
+.map-summary {
+    margin-top: 25px;
+    padding: 22px;
+    border: 1px solid var(--line);
+}
+
+.map-summary h2 {
+    margin: 0 0 8px;
+}
+
+.map-summary p {
+    color: var(--muted);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 14px;
+    color: #fff;
+    background: var(--green);
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.button:hover {
+    background: #21583f;
+}
+
+.article-page {
+    max-width: 850px;
+}
+
+.eyebrow {
+    margin: 35px 0 8px;
+    color: var(--green);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.article-page h1 {
+    margin: 0 0 12px;
+    font-size: clamp(2rem, 5vw, 3.6rem);
+}
+
+.reference-content {
+    margin: 35px 0;
+}
+
+.reference-content h2 {
+    margin: 28px 0 6px;
+    font-size: 1.35rem;
+}
+
+.reference-content p {
+    color: var(--muted);
+}
+
+@media (max-width: 760px) {
+    .map-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-card img {
+        height: 230px;
+    }
+
+    .site-header,
+    .site-footer {
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .page-shell {
+        padding-top: 35px;
+    }
+
+    .large-map img {
+        max-height: 520px;
+    }
+}
