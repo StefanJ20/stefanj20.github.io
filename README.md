@@ -27,3 +27,6 @@ Repository for Comp 484 Projects.
 
 - [Homework 8](https://stefanj20.github.io/Comp484/comp484-hw8/)
 - [Homework 8 source files](https://github.com/stefanj20/stefanj20.github.io/tree/main/Comp484/comp484-hw8)
+
+- [Homework 9](https://stefanj20.github.io/Comp484/comp484-hw9/)
+- [Homework 9 source files](https://github.com/stefanj20/stefanj20.github.io/tree/main/Comp484/comp484-hw9)
