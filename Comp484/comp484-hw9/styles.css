@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2ff;
+    color: #1e293b;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #312e81;
+}
+
+.intro {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #475569;
+}
+
+.card {
+    margin-bottom: 24px;
+    padding: 24px;
+    background-color: white;
+    border-left: 6px solid #6366f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: #4338ca;
+}
+
+p {
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4338ca;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #312e81;
+}
+
+#numberConversionOutput,
+#mathOutput {
+    margin-top: 24px;
+}
+
+.error {
+    color: #b91c1c;
+    font-weight: bold;
+}
