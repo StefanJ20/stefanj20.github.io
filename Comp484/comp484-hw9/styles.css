@@ -5,8 +5,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #eef2ff;
-    color: #1e293b;
+    background-color: #eef7f0;
+    color: #26352b;
 }
 
 .container {
@@ -19,27 +19,27 @@ body {
 h1 {
     margin-bottom: 10px;
     text-align: center;
-    color: #312e81;
+    color: #315c3d;
 }
 
 .intro {
     margin-bottom: 30px;
     text-align: center;
-    color: #475569;
+    color: #526b59;
 }
 
 .card {
     margin-bottom: 24px;
     padding: 24px;
-    background-color: white;
-    border-left: 6px solid #6366f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0;
+    box-shadow: none !important;
 }
 
 h2 {
     margin-top: 0;
-    color: #4338ca;
+    color: #477052;
 }
 
 p {
@@ -57,9 +57,14 @@ input {
     width: 100%;
     max-width: 350px;
     padding: 10px;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #b8cdbb;
     border-radius: 5px;
     font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #8eb698;
+    border-color: #6c9b78;
 }
 
 button {
@@ -68,14 +73,14 @@ button {
     padding: 11px 18px;
     border: none;
     border-radius: 5px;
-    background-color: #4338ca;
+    background-color: #527d5d;
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #312e81;
+    background-color: #3f6549;
 }
 
 #numberConversionOutput,
@@ -84,6 +89,6 @@ button:hover {
 }
 
 .error {
-    color: #b91c1c;
+    color: #a63d40;
     font-weight: bold;
 }
