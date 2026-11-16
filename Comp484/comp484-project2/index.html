@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giga Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Giga Pet</h1>
+      <p>Use the buttons to feed, play with, exercise, or rest your pet.</p>
+    </header>
+
+    <main>
+      <section class="game" aria-labelledby="pet-heading">
+        <div class="pet-image-container">
+          <img
+            class="pet-image"
+            src="images/hound.jpg"
+            alt="A black and orange cartoon dog"
+            width="323"
+            height="323"
+          >
+        </div>
+
+        <div class="dashboard">
+          <h2 id="pet-heading">Pet information</h2>
+
+          <div class="stat-row">
+            <span>Name</span>
+            <strong class="name">Hound</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Weight</span>
+            <strong><span class="weight">12</span> lb</strong>
+          </div>
+
+          <div class="stat-group">
+            <div class="stat-row">
+              <label for="happiness-meter">Happiness</label>
+              <strong><span class="happiness">70</span> / 100</strong>
+            </div>
+            <progress id="happiness-meter" value="70" max="100">70</progress>
+          </div>
+
+          <!-- Rest restores the additional energy stat. -->
+          <div class="stat-group">
+            <div class="stat-row">
+              <label for="energy-meter">Energy</label>
+              <strong><span class="energy">65</span> / 100</strong>
+            </div>
+            <progress id="energy-meter" value="65" max="100">65</progress>
+          </div>
+
+          <p class="status">
+            Status: <span id="mood-label">Normal</span>
+          </p>
+
+          <div class="button-container">
+            <button type="button" class="treat-button">Treat</button>
+            <button type="button" class="play-button">Play</button>
+            <button type="button" class="exercise-button">Exercise</button>
+            <button type="button" class="rest-button">Rest</button>
+          </div>
+
+          <p
+            id="pet-comment"
+            class="notification"
+            role="status"
+            aria-live="polite"
+          >
+            I'm ready to play.
+          </p>
+        </div>
+      </section>
+
+      <section class="history" aria-labelledby="history-heading">
+        <div class="history-heading">
+          <h2 id="history-heading">Activity history</h2>
+
+          <div class="filter-control">
+            <label for="activity-filter">Show:</label>
+            <select id="activity-filter">
+              <option value="all">All activities</option>
+              <option value="treat">Treat</option>
+              <option value="play">Play</option>
+              <option value="exercise">Exercise</option>
+              <option value="rest">Rest</option>
+            </select>
+          </div>
+        </div>
+
+        <p id="history-empty">No activities yet.</p>
+        <ul id="activity-log" aria-label="Recent activities, newest first"></ul>
+
+        <div class="history-footer">
+          <span>Total actions: <span id="care-count">0</span></span>
+          <span>Showing the last 8 activities.</span>
+        </div>
+      </section>
+
+      <section class="instructions" aria-labelledby="instructions-heading">
+        <h2 id="instructions-heading">How to play</h2>
+        <p>
+          Treats increase weight and happiness. Playing increases happiness
+          and lowers weight. Exercise lowers weight and happiness.
+          Playing and exercising use energy; resting restores it.
+          Stats cannot go below zero. Happiness and energy stop at 100.
+        </p>
+
+        <div class="reset-row">
+          <button type="button" id="reset-button" class="secondary">
+            Reset pet
+          </button>
+          <span id="save-status" role="status">
+            Progress saves automatically.
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <template id="activity-template">
+      <li class="activity-entry">
+        <div>
+          <strong class="activity-title"></strong>
+          <p class="activity-comment"></p>
+        </div>
+        <time></time>
+      </li>
+    </template>
+
+    <noscript>Enable JavaScript to use the pet controls.</noscript>
+  </body>
+</html>
